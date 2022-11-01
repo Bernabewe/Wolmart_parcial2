@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UsuarioController;
+use App\Http\Controllers\ProductoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,4 @@ use App\Http\Controllers\UsuarioController;
 
 Route::get('/', [HomeController::class, 'home']);
 Route::get('/usuario/registrar', [UsuarioController::class, 'registrar']);
+Route::get('/productos', [ProductoController::class, 'consultar']);
